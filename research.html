@@ -113,11 +113,11 @@
           of distribution as disasters are typically not normally distributed. After doing some research[2],
            [3], we opted to use bootstrapping to get the data shaped as close as possible to a normal distribution. 
            We were thinking about implementing other types of distributions, like a zero-inflated negative binomial 
-           distribution model, but we were struggling to wrap our heads around how they work.</p>
+           distribution model, but this was outside the scope of our prior statistical background.</p>
         <p>We have several data structures to implement to store our merged data. Possible data structures consist 
           of linked lists, hash tables, trees etc. A linked list would provide for convenient addition and removal
            of elements and can be easily implemented[4]. However, accessing information in a linked list can be very
-            time consuming as nodes can only be accessed sequentially[4]. A hash table would have a very efficiently 
+            time consuming as nodes can only be accessed sequentially[4]. A hash table is able to very efficiently 
             access information with a constant time complexity[4], [5]. However, hash tables have a chance of creating
              duplicate keys, especially as we deal with larger amounts of data[4]. Our final data structure to take into
               consideration is a tree. A tree would be able to showcase the relationship between the different information
@@ -151,7 +151,7 @@
         <p>Pandas were used for easy and efficient dataframe manipulation. 
           Because we need to download and merge different sources of data, os/sys is also employed to navigate between directories.</p>
         <p>For data scraping, the requests library is used to open html files and to identify download links. Selenium is also employed to navigate through multiple webpages. 
-           Pycountries is an important library involved in data cleaning; it helps translate country names into their respective ISO-3 codes.</p>
+           Pycountry is an important library involved in data cleaning; it helps translate country names into their respective ISO-3 codes.</p>
         <p>The abc (abstract class) library is also used to avoid code duplication and ensure subclass consistency. </p>
       <div class=" col-lg-3">
       </div>

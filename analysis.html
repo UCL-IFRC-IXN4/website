@@ -87,17 +87,17 @@
       </div>
       <div class="text-col col-lg-6">
         <p>During the data analysis part of our project, the program initially instantiates objects of type; <b>Bootstrapper</b>, <b>SourceAnalyser</b> and <b>DataAnalyser</b>. </p>
-        <p>The <b>Bootstrapper</b> class was designed to take in data (in this case a dataset of hazard results in the form of a 2D array) and return that same dataset but 
-          without outliers and return the confidence interval. It then calculates means from random subsamples of the dataset (if no sample number is specified 
-          our class defaults to 100,000), and stores these in a list of random means. Then our class calculates the confidence interval of the data; for which a 
-          frequency table is created for the random means, using this upper and lower bounds are created. The lower confidence interval is calculated as the first
-           random mean where the cumulative total of the sorted array (of random means) if higher than the lower bound, the inverse is then applied for the higher
-            confidence interval. Lastly, our program removes the outliers by looping through the original dataset and returning the data that lies within the upper
-             and lower confidence intervals.</p>
+        <p>The <b>Bootstrapper</b> class was designed to take in data (in this case a dataset of hazard results in the form of a 2D array), and then return that same dataset but 
+          without outliers, and it also returns the confidence interval. It then calculates means from random subsamples of the dataset (if no sample number is specified, 
+          our class defaults to 100,000), and then stores these in a list of random means. Our class then calculates the confidence interval of the data; for which a 
+          frequency table is created for the random means, we then use this to create upper and lower bounds. The lower confidence interval is calculated as the first
+           random mean where the cumulative total of the sorted array (of random means) is higher than the lower bound, the inverse is then applied for the higher
+            confidence interval. Lastly, our program removes the outliers by looping through the original dataset and returning the data that lies within the
+             confidence intervals.</p>
         <img class = "btsp-img" src="images/bootstrap_1.png" alt="bootstrap">
-        <p>The <b>SourceAnalyser</b> class is designed to take a list of sources as input and return a file where the source output is analysed. Firstly, 
+        <p>The <b>SourceAnalyser</b> class is designed to take a list of sources as input, and return a file where the source output is analysed. Firstly, 
           the class adds the correctly FileReaders for the inputted sources into an array of readers and reads in the data from the necessary sources. 
-          The class then loops through each year’s data for each country and calculates the total number of records for each country and the total number of records overall.</p>
+          The class then loops through each year’s data for each country and calculates the total number of records for each country, and the total number of records overall.</p>
         <p><b>DataAnalyser</b> is a class for analysing the data after the filters have been applied during the data analysis. The class starts by splitting the 2-Dimensional array into
            3, 1-Dimensional arrays (deaths, affected and displacements). The class then uses the Bootstrapper class to remove outliers if calculations are to be done without
             outliers. Next, the mean and standard deviations are calculated for each of the three sub-datasets using traditional methods, which are then returned to the main program.</p>
