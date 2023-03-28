@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Group 4</title>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+  <!-- font awesome (for glyphs)-->
+  <script src="https://kit.fontawesome.com/667ff7917c.js" crossorigin="anonymous"></script>
+
+  <link rel="shortcut icon" href="images/favicon.ico" />
+
+  <!-- bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  <!-- link to custom css -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- default view -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+  <section class="red-section">
+    <div class="container-fluid container-fluid-req">
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">Group 4</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navtoggle" aria-controls="navtoggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navtoggle">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="requirements.html"> Requirements </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="research.html"> Research </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="system_design.html"> System Design </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="implementation.html"> Implementation </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="analysis.html"> Analysis </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="evaluation.html"> Evaluation </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="appendices.html"> Appendices </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </nav>
+
+        <h1 class="big-heading-bottom heading-correction">Blog</h1>
+
+    </div>
+
+
+  </section>
+
+
+  <section id="features" class="white-section general-container">
+
+    <div class="dropdown-container">
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+            <a class = "blog-drpd" onclick = "hideShow(2)">Week 2</a>
+            <a class = "blog-drpd" onclick = "hideShow(4)">Week 4</a>
+            <a class = "blog-drpd" onclick = "hideShow(8)">Week 8</a>
+            <a class = "blog-drpd" onclick = "hideShow(10)">Week 10</a>
+            <a class = "blog-drpd" onclick = "hideShow(12)">Week 12</a>
+            <a class = "blog-drpd" onclick = "hideShow(14)">Week 14</a>
+            <a class = "blog-drpd" onclick = "hideShow(16)">Week 16</a>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class = "blog-entry">
+        <h2 class="subheading">Week 2</h2>
+        <div class="row">
+        <div class=" col-lg-3">
+        </div>
+        <div class="text-col col-lg-6">
+            <h4 class="sub-subheading">11th October 2022</h4>
+            <p>The first 2 weeks were spent focusing on gathering requirements from our clients, clearing up any
+                ambiguities and doing research with regards to HCI. We spent time discussing the type of people 
+                who would benefit from our work to help us better understand exactly what our project
+                deliverables should be (seen below).  </p>
+            <img class = "persona-blog" src="images/persona_1.png" alt="asdf">
+            <img class = "persona-blog" src="images/persona_2.png" alt="asdf">
+            <img class = "persona-blog" src="images/persona_3.png" alt="asdf">
+            <p>We came up with the following MoSCoW list: </p>
+            <img class = "persona-blog" src="images/blog_mosc/m1.png" alt="sui"> 
+            <p>We will begin looking through the data sets and try to understand how they are formatted to help us
+                begin our code which scrapes and clean the data sets. </p>
+        </div>
+        <div class=" col-lg-3">
+        </div>
+        </div>
+    </div>
+
+
+    <div class = "blog-entry">
+        <h2 class="subheading">Week 4</h2>
+        <div class="row">
+        <div class=" col-lg-3">
+        </div>
+        <div class="text-col col-lg-6">
+            <h4 class="sub-subheading">25th October 2022</h4>
+            <p>We noticed that a lot of the data sets were not in English, so we noted that we had to deal with
+                translating these words during the scraping process.</p>
+            <img class = "persona-blog" src="images/cyrillic.png" alt="cyrillic">
+            <p>We began writing code which would clean the raw data and move it into separate csv files locally and merge all the data into a singular data file. </p>
+            <p>We had discussions and did some research and ultimately decided on a unique tree structure to store our merged data from all 4 data sources.</p>
+            <img class = "tree-diag-blog" src="images/raw_data_storage.png" alt="rds">
+            <p>We are going to complete both the data cleaning code and the code which situates all the data from the sources into a singular data frame. We will continue to consistently update Justin on our progress.</p>
+            <img class = "persona-blog" src="images/blog_mosc/m2.png" alt="sui"> 
+        </div>
+        <div class=" col-lg-3">
+        </div>
+        </div>
+    </div>
+
+
+    <div class = "blog-entry">
+        <h2 class="subheading">Week 8</h2>
+        <div class="row">
+        <div class=" col-lg-3">
+        </div>
+        <div class="text-col col-lg-6">
+            <h4 class="sub-subheading">22nd November 2022</h4>
+            <p>We completed the data scraping code and the code which merges all the data into a singular data
+                frame (our unique tree structure).</p>
+            <p><a href="images/code8.jpg">Code screenshot</a></p>
+            <p>We realised we had to ensure our data sets and categories were compatible with our sister group (group 5). To achieve this, we had meetings together to ensure we had matching categories and compatible code.</p>
+            <p><a href="images/Hazard.jpg">Hazard classification</a></p>
+            <p>Once we got that out of the way. We focused on starting the design of the data processor module.
+                We started by researching what type of distribution to represent the data in. We decided to use a
+                normal distribution to represent the disaster data so we could calculate the standard deviation so
+                we could calculate outliers.</p>
+            <p>Take part in a meeting, with our client (Justin Ginetti) and two other UN data scientists, to ask for
+                advise on our take of processing the data and how to analyse it to get useful statistical data.</p>
+            
+            <img class = "blog-mosc-3" src="images/blog_mosc/m3.png" alt="">
+        </div>
+        <div class=" col-lg-3">
+        </div>
+        </div>
+    </div>
+
+    <div class = "blog-entry">
+        <h2 class = "subheading">Week 10</h2>
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class = "text-col col-lg-6">
+                <h4 class="sub-subheading">7th February 2023</h4>
+                <p>After some consideration, we decided that it would be too time consuming for us to learn how to implement a 
+                    zero inflated negative binomial distribution in our analysis. 
+                    Therefore, we decided to use bootstrapping to shape the data we have to a normal distribution.   </p>
+                <p>Our next step is to start researching how to make calculations based off a zero inflated negative binomial distribution
+                    and continue pushing onward with the design of the analysis module.</p>
+                <img src="images/blog_mosc/m4.png" alt="">
+            </div>
+            <div class="col-lg-3"></div>
+
+        </div>
+    </div>
+
+    <div class = "blog-entry">
+        <h2 class = "subheading">Week 12</h2>
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class = "text-col col-lg-6">
+                <h4 class="sub-subheading">21st February 2023</h4>
+                <p>After some consideration, we decided that it would be too time consuming for us to learn how to implement 
+                    a zero inflated negative binomial distribution in our analysis. Therefore, we decided to use bootstrapping 
+                    to shape the data we have to a normal distribution (as seen in the test data below).  </p>
+                <img src="images/bootstrap_1.png" alt="">
+                <p>We are making good progress in our data processing module. Our next step is to finish writing the data processing and 
+                    visualisation code. We also plan to have a code run-through with Justin Ginetti in the coming two weeks.
+                </p>
+                <img src="images/blog_mosc/m5.png" alt="">
+                
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+
+
+    <div class = "blog-entry">
+        <h2 class = "subheading">Week 14</h2>
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class = "text-col col-lg-6">
+                <h4 class="sub-subheading">7th March 2023</h4>
+                <p>We had our code run-through with Justin (mostly discussing our data analysis code). 
+                    In these two weeks, we have neared completion of our data analysis code and have begun drafting 
+                    our data visualisation code.  </p>
+                <p>We will complete the data analysis and data visualisation code in the final weeks. </p>
+                <img src="images/blog_mosc/m6.png" alt="">
+
+                
+            </div>
+            <div class="col-lg-3"></div>
+
+        </div>
+    </div>
+
+
+    <div class = "blog-entry">
+        <h2 class = "subheading">Week 16</h2>
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class = "text-col col-lg-6">
+                <h4 class="sub-subheading">21st March 2023</h4>
+                <p>In the final two weeks it was crunch time, we completed our analysis code and held a code runthrough session with our client on Teams.  </p>
+                <p>We will complete the data analysis and data visualisation code in the final weeks. </p>
+                <p>We then began and completed data visualisation which moved the data we had into a singular data
+                    frame (2D array). This is the final deliverable in our project!</p>
+                <img class="title-image" src="images/heading-pic.jpg" alt="heading pic">
+                <img src="images/blog_mosc/m7.png" alt="">
+            </div>
+            <div class="col-lg-3"></div>
+
+        </div>
+    </div>
+
+
+  </section>
+
+
+
+
+
+
+  <!-- Footer -->
+
+  <footer id="footer" class="red-section footer-cont">
+
+    <i class="social-icons fab fa-twitter"></i>
+    <i class="social-icons fab fa-facebook-f"></i>
+    <i class="social-icons fab fa-instagram"></i>
+    <i class="social-icons fas fa-envelope"></i>
+    <p class="bott-text">© Copyright 2023 Group 4</p>
+
+  </footer>
+
+
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>

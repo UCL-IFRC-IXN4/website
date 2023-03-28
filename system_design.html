@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Group 4</title>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+  <!-- font awesome (for glyphs)-->
+  <script src="https://kit.fontawesome.com/667ff7917c.js" crossorigin="anonymous"></script>
+
+  <link rel="shortcut icon" href="images/favicon.ico" />
+
+  <!-- bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  <!-- link to custom css -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- default view -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+  <section class="red-section">
+    <div class="container-fluid container-fluid-req">
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">Group 4</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navtoggle" aria-controls="navtoggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navtoggle">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="requirements.html"> Requirements </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="research.html"> Research </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="system_design.html"> System Design </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="implementation.html"> Implementation </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="analysis.html"> Analysis </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="evaluation.html"> Evaluation </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="appendices.html"> Appendices </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+        <h1 class="big-heading-bottom heading-correction">System Design</h1>
+
+    </div>
+
+
+  </section>
+
+<!-- problem with alignment - fix when home-->
+
+
+  <!-- Abstract -->
+
+  <section id="features" class="white-section general-container" >
+
+    <h2 class="subheading">System Architecture</h2>
+    <p>Our system architecture consists of 5 main steps.</p>
+    <div class="row">
+      <div class="text-col col-lg-5 col-md-12">
+
+        <div class="sys-arch-steps">
+
+          <h4 class="sub-subheading">Step 1: Data Acquisition</h4>
+          <p>We first acquired the necessary input data from 4 data sources (EM-DAT, Desinventar, IDMC, IFRC).</p>
+
+          <h4 class="sub-subheading">Step 2: Data Cleaning</h4>
+          <p>We then resolved issues regarding missing data, outliers, inconsistently named field, null values 
+            and working concurrently with group 5 to ensure our data sets are compatible with theirs.</p>
+
+          <h4 class="sub-subheading">Step 3: Data Shaping</h4>
+          <p>We then merge data from all the data sets and decompose each hazard from every source down to the 
+            actual data we need (hazard type, hazard country ISO, hazard effects, hazard date) before
+            iteratively inserting them into our unique tree structure.</p>
+          
+          <h4 class="sub-subheading">Step 4: Data Analysis</h4>
+          <p>Once we shaped the data in the form of our tree, we will start using it to 
+            get more useful data in the form of percentages and trends.</p>  
+
+          <h4 class="sub-subheading">Step 5: Data Visualisation</h4>
+          <p>We then generated tables for the IFRC by having the data we calculated and the data from our unique tree structure moved to a 2D array.</p>  
+
+        </div>
+      </div>
+      <div class="text-col col-lg-7 col-md-12">
+
+        <img class = "sys-arch-pic" src="images/sys_arch.png" alt="system architecture">
+
+      </div>
+
+
+
+    </div>
+
+
+  </section>
+
+  <section class="red-section raw-data-st-sec general-container">
+
+    <h3 class="subheading ">Raw Data Storage</h3>
+    <div class="row">
+      <div class=" col-lg-3">
+      </div>
+      <div class="text-col col-lg-6">
+        <p class="raw-data-st-sec">There’s a root node which is connected to each country which acts as a root node for
+           their own separate trees, essentially giving us independent trees for each country, then each root
+            node has 4 grandchildren (month, year, hazard profile, hazard cluster).</p>
+      </div>
+      <div class=" col-lg-3">
+      </div>
+    </div>
+    <img class = "tree-diag" src="images/raw_data_storage.png" alt="data tree">
+
+
+  </section>
+
+  <section class="white-section general-container">
+
+    <h3 class="subheading ">Processed Data Storage</h3>
+    <div class="row">
+      <div class=" col-lg-3">
+      </div>
+      <div class="text-col col-lg-6">
+        <p>The final set of data including both raw and processed 
+          data will be moved to a singular data frame in the form of a 2D array. 
+          This is the final deliverable that the IFRC are expecting.</p>
+      </div>
+      <div class=" col-lg-3">
+      </div>
+    </div>
+    <img src="images/processed_data_storage.png" alt="processed table">
+
+
+  </section>
+
+
+  <section class="white-section general-container">
+    <h3 class="subheading ">Design Patterns and Practices</h3>
+    <div class="row">
+      <div class=" col-lg-3">
+      </div>
+      <div class="text-col col-lg-6">
+        <p>Pair programming and test driven development practices are employed to minimise bugs and errors</p>
+      </div>
+      <div class=" col-lg-3">
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer" class="red-section footer-cont">
+
+    <i class="social-icons fab fa-twitter"></i>
+    <i class="social-icons fab fa-facebook-f"></i>
+    <i class="social-icons fab fa-instagram"></i>
+    <i class="social-icons fas fa-envelope"></i>
+    <p class="bott-text">© Copyright 2023 Group 4</p>
+
+  </footer>
+
+
+</body>
+
+</html>

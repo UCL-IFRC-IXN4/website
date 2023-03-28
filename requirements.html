@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Group 4</title>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+  <!-- font awesome (for glyphs)-->
+  <script src="https://kit.fontawesome.com/667ff7917c.js" crossorigin="anonymous"></script>
+
+  <link rel="shortcut icon" href="images/favicon.ico" />
+
+  <!-- bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  <!-- link to custom css -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- default view -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+  <section class="red-section">
+    <div class="container-fluid container-fluid-req">
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">Group 4</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navtoggle" aria-controls="navtoggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navtoggle">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="requirements.html"> Requirements </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="research.html"> Research </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="system_design.html"> System Design </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="implementation.html"> Implementation </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="analysis.html"> Analysis </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="evaluation.html"> Evaluation </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="appendices.html"> Appendices </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+        <h1 class="big-heading-bottom heading-correction">Requirements</h1>
+
+    </div>
+
+
+  </section>
+
+
+  <!-- Abstract -->
+
+  <section id="features" class="white-section general-container" >
+
+    <h2 class="subheading">Project Background</h2>
+    <div class="row">
+      <div class=" col-lg-3">
+      </div>
+      <div class="text-col col-lg-6">
+        <p>The IFRC is currently the largest humanitarian network in the world. Their influence and helping hand stretch across 192 countries where they support local Red Cross and Red Crescent activities. They are also made up of more than 10 million volunteers from around the globe.</p>
+        <p>Our project is oriented around providing centralised source of data for users to obtain useful information regarding disasters occurring worldwide.</p>
+      </div>
+      <div class=" col-lg-3">
+      </div>
+    </div>
+
+    <h2 class="subheading">Project Goals</h2>
+    <div class="row">
+      <div class=" col-lg-3">
+      </div>
+      <div class="text-col col-lg-6">
+        <p>Our project goal is to impact policy making decisions at IFRC with the representation of real time data by merging data regarding disasters from multiple data sources (EM-DAT, Desinventar, IDMC’s GIDD and IFRC), processing this raw data into useful data (in the form of percentages and trends) and situate everything into a singular database (a 2D array).</p>
+      </div>
+      <div class=" col-lg-3">
+      </div>
+    </div>
+
+    <h2 class="subheading">Client Requirements</h2>
+    <div class="row">
+      <div class=" col-lg-3">
+      </div>
+      <div class="text-col col-lg-6">
+        <p>We held weekly meetings with the IFRC with the first few meetings’ having the sole purpose of discussing the project requirements, what the clients expected us to accomplish and the general timeline of the project. They provided us with the projects key requirements and a few possible ways to go about completing them. Following meetings were used to update the IFRC on our progress and clarify further ambiguities.</p>
+        <p>We asked questions such as:</p>
+        <div class="req-list">
+          <li>What is the end goal for this project and what is it being developed for?</li>
+          <p class="req-ans">Provide a centralised source of information regarding disaster data and to ultimately
+            impact policy making decisions at the IFRC.</p>
+          <li>Are there any requirements for the algorithmic processing of the data?</li>
+          <p class="req-ans">Time complexity is of minimal concern as code will only be run every 6 months.
+            Space complexity shouldn’t be too egregiously high.</p>
+          <li>Will the people we present to have a technical background?</li>
+          <p class="req-ans">Only some of them will, assume that a majority of them have no technical
+            background.</p>
+        </div>
+      
+
+      </div>
+      <div class=" col-lg-3">
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section>
+
+    <div id="testimonials" class="carousel slide red-section" data-ride="carousel" data-bs-interval="false" data-bs-pause="hover" keyboard="True">
+      <h2 class="persona-heading">Personas</h2>
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img class="pers-img" src="images/persona_1.png" alt="persona 1">
+        </div>
+
+        <div class="carousel-item">
+          <img class="pers-img" src="images/persona_2.png" alt="persona 2">
+        </div>
+
+        <div class="carousel-item">
+          <img class="pers-img" src="images/persona_3.png" alt="persona 3">
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonials" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonials" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </section>
+
+
+
+
+  <!-- Pricing -->
+
+  <section id="pricing" class="white-section">
+    <h2 class="subheading mosc-head">MoSCoW List</h2>
+    <p>Our project has no non-functional requirements and due to the straightforward nature of our project, we only have must haves.</p>
+    <img class="mscw-pic" src="images/mscw.png" alt="MoSCoW List">
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer" class="red-section footer-cont">
+
+    <i class="social-icons fab fa-twitter"></i>
+    <i class="social-icons fab fa-facebook-f"></i>
+    <i class="social-icons fab fa-instagram"></i>
+    <i class="social-icons fas fa-envelope"></i>
+    <p class="bott-text">© Copyright 2023 Group 4</p>
+
+  </footer>
+
+
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>

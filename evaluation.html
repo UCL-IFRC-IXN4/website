@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Group 4</title>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+  <!-- font awesome (for glyphs)-->
+  <script src="https://kit.fontawesome.com/667ff7917c.js" crossorigin="anonymous"></script>
+
+  <link rel="shortcut icon" href="images/favicon.ico" />
+
+  <!-- bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  <!-- link to custom css -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- default view -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+  <section class="red-section">
+    <div class="container-fluid container-fluid-req">
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">Group 4</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navtoggle" aria-controls="navtoggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navtoggle">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="requirements.html"> Requirements </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="research.html"> Research </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="system_design.html"> System Design </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="implementation.html"> Implementation </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="analysis.html"> Analysis </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="evaluation.html"> Evaluation </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="appendices.html"> Appendices </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+        <h1 class="big-heading-bottom heading-correction">Evaluation</h1>
+
+    </div>
+
+
+  </section>
+
+<!-- problem with alignment - fix when home-->
+
+
+  <!-- Abstract -->
+
+  <section class="white-section general-container" >
+
+    <h3 class="subheading">Individual Contribution Distribution Table</h3>
+
+    <img class = "ind-cont" src="images/ind_cont.png" alt="individual contribution">
+
+
+  </section>
+
+
+  <section class="white-section general-container">
+
+    <h3 class="subheading">Achievement Table</h3>
+
+    <img class = "achievements" src="images/achievements.png" alt="achievements">
+
+  </section>
+
+  <section class="white-section general-container">
+
+    <div class="row">
+      <div class=" col-lg-3">
+      </div>
+      <div class="text-col col-lg-6">
+        <h3 class="subheading ">Critical Evaluation of the Project</h3>
+        <h4 class="sub-subheading">Functionality</h4>
+        <p>We have designed a programme which scrapes raw data from four files (EM-DAT, Desinventar, IDMC’s GIDD and IFRC) and merges them into a single dataset (a unique tree structure).
+           The code then analyses the new dataset to produce
+           useful information in the form of percentages and trends.
+            The code then allocates the processed and raw data into a single data frame (a 2d ARRAY) which is our final deliverable.</p>
+        <h4 class="sub-subheading">Stability</h4>
+        <p>Our code is stable and reproducible as long as we continue to use the same original data sources the formatting of the original data sources remain unchanged.</p>
+        <h4 class="sub-subheading">Efficiency and Maintainability</h4>
+        <p>Our code is very simple, so even though we did not take efficiency into account as it was not a
+          priority, our code still doesn’t take an egregious amount of time to run. It is also very easy to
+          maintain as we do not expect it to require any modifications anywhere soon.</p>
+        <h4 class="sub-subheading">Compatibility</h4>
+        <p>Our code should be compatible across any device as it was coded on python and doesn’t take much
+          to run or implement.</p>
+        <h4 class="sub-subheading">Project Management</h4>
+        <p>Project management was not an issue as we worked well together as a team and fulfilled all our
+          roles. The roles we fulfilled were mainly delegated by our team lead Dylan Penney after we let him
+          know of each of our strength and weaknesses</p>
+      </div>
+      <div class=" col-lg-3">
+      </div>
+    </div>
+
+  </section>
+
+  <section class="white-section general-container">
+
+    <div class="row">
+      <div class=" col-lg-3">
+      </div>
+      <div class="text-col col-lg-6">
+        <h3 class="subheading ">Future Work</h3>
+          <div class="fut-list">
+            <li>Explore, implement, and compare more distribution types</li>
+            <li>Employ regional analysis rather than countries</li>
+            <li>storm/flood categorisation</li>
+            <li>Implement more coding ethics</li>
+          </div>
+      </div>
+      <div class=" col-lg-3">
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer id="footer" class="red-section footer-cont">
+
+    <i class="social-icons fab fa-twitter"></i>
+    <i class="social-icons fab fa-facebook-f"></i>
+    <i class="social-icons fab fa-instagram"></i>
+    <i class="social-icons fas fa-envelope"></i>
+    <p class="bott-text">© Copyright 2023 Group 4</p>
+
+  </footer>
+
+
+</body>
+
+</html>

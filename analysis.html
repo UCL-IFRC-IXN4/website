@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Group 4</title>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+  <!-- font awesome (for glyphs)-->
+  <script src="https://kit.fontawesome.com/667ff7917c.js" crossorigin="anonymous"></script>
+
+  <link rel="shortcut icon" href="images/favicon.ico" />
+
+  <!-- bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  <!-- link to custom css -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- default view -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+  <section class="red-section">
+    <div class="container-fluid container-fluid-req">
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">Group 4</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navtoggle" aria-controls="navtoggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navtoggle">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="requirements.html"> Requirements </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="research.html"> Research </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="system_design.html"> System Design </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="implementation.html"> Implementation </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="analysis.html"> Analysis </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="evaluation.html"> Evaluation </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="appendices.html"> Appendices </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+        <h1 class="big-heading-bottom heading-correction">Analysis</h1>
+
+    </div>
+
+
+  </section>
+
+
+
+  <section id="features" class="white-section general-container" >
+
+    <h3 class="subheading ">Bootstrapping and Analysis</h3>
+
+    <div class="row">
+      <div class=" col-lg-3">
+      </div>
+      <div class="text-col col-lg-6">
+        <p>During the data analysis part of our project, the program initially instantiates objects of type; <b>Bootstrapper</b>, <b>SourceAnalyser</b> and <b>DataAnalyser</b>. </p>
+        <p>The <b>Bootstrapper</b> class was designed to take in data (in this case a dataset of hazard results in the form of a 2D array) and return that same dataset but 
+          without outliers and return the confidence interval. It then calculates means from random subsamples of the dataset (if no sample number is specified 
+          our class defaults to 100,000), and stores these in a list of random means. Then our class calculates the confidence interval of the data; for which a 
+          frequency table is created for the random means, using this upper and lower bounds are created. The lower confidence interval is calculated as the first
+           random mean where the cumulative total of the sorted array (of random means) if higher than the lower bound, the inverse is then applied for the higher
+            confidence interval. Lastly, our program removes the outliers by looping through the original dataset and returning the data that lies within the upper
+             and lower confidence intervals.</p>
+        <img class = "btsp-img" src="images/bootstrap_1.png" alt="bootstrap">
+        <p>The <b>SourceAnalyser</b> class is designed to take a list of sources as input and return a file where the source output is analysed. Firstly, 
+          the class adds the correctly FileReaders for the inputted sources into an array of readers and reads in the data from the necessary sources. 
+          The class then loops through each year’s data for each country and calculates the total number of records for each country and the total number of records overall.</p>
+        <p><b>DataAnalyser</b> is a class for analysing the data after the filters have been applied during the data analysis. The class starts by splitting the 2-Dimensional array into
+           3, 1-Dimensional arrays (deaths, affected and displacements). The class then uses the Bootstrapper class to remove outliers if calculations are to be done without
+            outliers. Next, the mean and standard deviations are calculated for each of the three sub-datasets using traditional methods, which are then returned to the main program.</p>
+        <p>After initiating all the required objects, the program begins the data analysis, in which, 8 different analyses are completed (and repeated for calculations without outliers being removed).</p>
+        <div class="analysis-list">
+          <p><li>Data sorted by country</li></p>
+          <p><li>Data sorted by country sorted by month</li></p>
+          <p><li>Data sorted by country sorted by year</li></p>
+          <p><li>Data sorted by country per hazard profile</li></p>
+          <p><li>Data sorted by country per year per month</li></p>
+          <p><li>Data sorted by country per month sorted by profile</li></p>
+          <p><li>Data sorted by country sorted by year sorted by profile</li></p>
+        </div>
+
+        <p>The program then writes the output to a unique results file with a unique naming convention mathemical_analysis_pcp[initial of filter (e.g. m = month)]* , where * implies the contents of [] can be repeated numerous (>= 0) times.
+          Next the program looks at the data when sorted by country per month per profile and calculates the percentages of each given filter, for example, 25% of German Metrological and Hydrological natural disasters occur in January. The same is then completed for data sorted by country by month by type.
+          </p>
+        <p>The final stage of the data analysis is the source composition analysis, in which a powerset of the set of sources is created and then the SourceAnalyser class analyses each individual powerset element (see paragraph 3).</p>
+
+      </div>
+
+      <div class=" col-lg-3">
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- Footer -->
+
+  <footer id="footer" class="red-section footer-cont">
+
+    <i class="social-icons fab fa-twitter"></i>
+    <i class="social-icons fab fa-facebook-f"></i>
+    <i class="social-icons fab fa-instagram"></i>
+    <i class="social-icons fas fa-envelope"></i>
+    <p class="bott-text">© Copyright 2023 Group 4</p>
+
+  </footer>
+
+</body>
+
+</html>
