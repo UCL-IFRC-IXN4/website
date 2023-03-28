@@ -314,6 +314,10 @@ p {
   height: 100%;
 }
 
+.footer-link-pad {
+  padding: 20px 0;
+}
+
 .bott-text {
   color: white;
 }
@@ -476,4 +480,13 @@ p {
 
 .github-link-big:hover {
   color: #Ff6154;
+}
+
+.footer-link {
+  margin: 0 1rem;
+  color: white;
+}
+
+.footer-link:hover {
+  color: black;
 }
