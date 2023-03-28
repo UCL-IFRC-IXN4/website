@@ -83,42 +83,46 @@
       <div class=" col-lg-3">
       </div>
       <div class="text-col col-lg-6">
-        <p>Our project aims to be the backbone of an online resource very similar to IFRC GO.
-           Our project requirements only include the backend (obtaining, merging, and analysing the data)
-            and no front end (displaying the data on a website).
+        <p>Our project aims to be the backbone of an online resource very
+           similar to IFRC GO. Our project requirements only include the
+            backend (obtaining, merging, and analysing the data) and no front end
+             (the actual display of the data on some sort of website).
         </p> 
         <p>
-        The main features of the IFRC GO platform, which we are trying to mimic, is their ability
-         to coherently present important real time data from around the world in a clear and concise manner.
+          The IFRC GO platform’s goal is to make disaster data readily accessible to IFRC responders worldwide to make more informed decisions[1]. The information available on the 
+          platform is reliant on data provided by their humanitarian partners and on-site volunteers. It displays all this data in a in a clear and easy to read manner for the 
+          general public to utilise[1].
         </p>
+        <p>The main features of the IFRC GO platform, which we are trying to mimic and provide, is their ability to coherently present important real time statistical data 
+          from around the world in a clear and concise manner. However, instead of being dependant on reported data from on-site volunteers, 
+          the data we are processing are from multiple online sources.</p>
       </div>
       <div class=" col-lg-3">
       </div>
     </div>
 
-    <h2 class="subheading">Database Structure</h2>
+    <h2 class="subheading">Database Structure and Distribution</h2>
     <div class="row">
       <div class=" col-lg-3">
       </div>
       <div class="text-col col-lg-6">
-        <p>There were multiple solutions to approaches to analysing
-           and processing the raw data to obtain more useful information.
-            The first thing we had to decide as a team was what distribution
-             was going to represent our data. We were going to go with a normal
-              distribution approach at first, but after consulting a team of UN data
-               scientists, we were advised to use a different implemention as disasters are typically not normally distributed.
-                 After doing some research, we opted to use bootstrapping to get the
-                  data shaped as close as possible to a normal distribution. We considered other types of distributions,
-                    such as a zero-inflated negative binomial distribution model,
-                     but we were unable to due to time constraints.</p>
-        <p>We have several potential data structures for storing our merged data. Possible data structures include
-           linked lists, hash tables, and trees. A linked list would provide for convenient addition and removal of
-            elements and can be easily implemented. However, accessing information in a linked list can be time
-             consuming as nodes can only be accessed sequentially. A hash table would be efficient for information access
-              due to a constant time complexity. However, hash tables have a chance of creating duplicate
-               keys, especially as we deal with large amounts of data. Our final data structure to take into consideration
-                is a tree. A tree would be able to showcase the relationship between the different information we have.
-                 The downside is that iterating through a tree would be more complex to implement compared to linked lists and hash tables.</p>
+        <p>There were multiple solutions to approaches to analysing and processing the raw data to obtain more 
+          useful information. But first thing we had to decide as a team was what distribution was going to 
+          represent our data. We were going to go with a normal distribution approach at first, but after 
+          consulting a team of data scientists from the UN, we were advised to implement a different type 
+          of distribution as disasters are typically not normally distributed. After doing some research[2],
+           [3], we opted to use bootstrapping to get the data shaped as close as possible to a normal distribution. 
+           We were thinking about implementing other types of distributions, like a zero-inflated negative binomial 
+           distribution model, but we were struggling to wrap our heads around how they work.</p>
+        <p>We have several data structures to implement to store our merged data. Possible data structures consist 
+          of linked lists, hash tables, trees etc. A linked list would provide for convenient addition and removal
+           of elements and can be easily implemented[4]. However, accessing information in a linked list can be very
+            time consuming as nodes can only be accessed sequentially[4]. A hash table would have a very efficiently 
+            access information with a constant time complexity[4], [5]. However, hash tables have a chance of creating
+             duplicate keys, especially as we deal with larger amounts of data[4]. Our final data structure to take into
+              consideration is a tree. A tree would be able to showcase the relationship between the different information
+               we have[4]. An n-ary tree would also require less space as no extra links between nodes are required[6]. 
+               The downside to a tree is that iterating through a tree would be more complex to implement compared to linked lists and hash tables[4].</p>
         <p>To represent the final set of data in a table format, it made most sense to implement a 2D array.</p>
       </div>
       <div class=" col-lg-3">
