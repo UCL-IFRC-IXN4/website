@@ -138,9 +138,6 @@ p {
   margin: 3rem;
 }
 
-.padding-for-dylan {
-  padding: 6px 0 ;
-}
 
 .carousel-inner {
   padding: 2% 15%;
@@ -489,4 +486,8 @@ p {
 
 .footer-link:hover {
   color: black;
+}
+
+.card-body-extra {
+  min-height: 400px;
 }
