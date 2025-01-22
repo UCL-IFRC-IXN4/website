@@ -2,7 +2,7 @@
   "name": "website",
   "private": false,
   "version": "0.0.0",
-  "homepage": "./",
+  "homepage": "https://ucl-ifrc-ixn4.github.io/website/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
