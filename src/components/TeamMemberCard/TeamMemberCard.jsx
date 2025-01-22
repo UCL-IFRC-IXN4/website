@@ -19,7 +19,7 @@ const TeamMemberCard = ({ imgURL, name, role, email, linkedin, github }) => (
     }}
   >
     <div className="img-container">
-      <img src={"images/people/" + imgURL + ".jpg"} alt={name} />
+      <img src={"website/images/people/" + imgURL + ".jpg"} alt={name} />
     </div>
     <div className="role-container">
       <span>

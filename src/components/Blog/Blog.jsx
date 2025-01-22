@@ -33,7 +33,7 @@ const blogContent = [
       process.
     </p>
     <figure>
-      <img src="images/blog/foreign-classification.png" />
+      <img src="website/images/blog/foreign-classification.png" />
       <figcaption>Example of non-english classifications in data.</figcaption>
     </figure>
     <p>
@@ -46,7 +46,7 @@ const blogContent = [
       unique tree structure to store our merged data from all 4 data sources.
     </p>
     <figure>
-      <img src="images/graphs/data_lake.png" />
+      <img src="website/images/graphs/data_lake.png" />
       <figcaption>Unique tree structure to store data.</figcaption>
     </figure>
     <p>
@@ -63,7 +63,7 @@ const blogContent = [
           data into a singular data frame (our unique tree structure).
         </p>
         <figure>
-          <img src="images/blog/code-snippet.png" />
+          <img src="website/images/blog/code-snippet.png" />
           <figcaption>Code snippet</figcaption>
         </figure>
       </div>
@@ -75,7 +75,7 @@ const blogContent = [
           code.
         </p>
         <figure>
-          <img src="images/blog/hazard.png" />
+          <img src="website/images/blog/hazard.png" />
           <figcaption>Hazard classification used.</figcaption>
         </figure>
       </div>
@@ -114,7 +114,7 @@ const blogContent = [
       to shape the data we have to a normal distribution (as seen in the test
       data below).
     </p>
-    <img src="images/graphs/bootstraping.png" />
+    <img src="website/images/graphs/bootstraping.png" />
     <p>
       We are making good progress in our data processing module. Our next step
       is to finish writing the data processing and visualisation code. We also
@@ -148,7 +148,7 @@ const blogContent = [
       our project!
     </p>
     <figure>
-      <img src="images/blog/final.png" />
+      <img src="website/images/blog/final.png" />
       <figcaption>
         UCL-IXN-IFRC-23-4: Omung Bhasin, Dylan Penney, Hogan Ma, Ryan Lock (as
         pictured).

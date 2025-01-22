@@ -14,7 +14,7 @@ export const system_design_content = (
           <li>Step 4: Data Analysis</li>
           <li>Step 5: Data Visualisation</li>
         </ul>
-        <img src="images/graphs/sys_arch.png"></img>
+        <img src="website/images/graphs/sys_arch.png"></img>
       </div>
     </div>
     <div className="section-container">
@@ -85,7 +85,7 @@ export const system_design_content = (
         <span>Data Lake</span>
       </div>
       <div className="section-content">
-        <img src="images/graphs/data_lake.png" />
+        <img src="website/images/graphs/data_lake.png" />
       </div>
     </div>
   </div>

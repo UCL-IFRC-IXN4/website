@@ -93,7 +93,7 @@ export const home_content = (
         </div>
         <div className="section-content">
           <img
-            src="images/graphs/gantt_chart.png"
+            src="website/images/graphs/gantt_chart.png"
             alt="Gantt Chart"
             width={"1200px"}
             height={"500px"}
