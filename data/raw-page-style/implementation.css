@@ -1,0 +1,70 @@
+.implementation-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    width: 100%;
+  }
+
+  .section-container:nth-child(even) {
+    background-color: #ed4337;
+    color: white;
+  }
+
+  .section-container:nth-child(odd) {
+    background-color: white;
+    color: black;
+  }
+
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 32px 0px;
+
+    p {
+      max-width: 40%;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .tech-stack-icons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 16px;
+    font-weight: bold;
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif !important;
+
+    svg {
+      font-size: 42px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.analysis-page {
+  div {
+    width: 100%;
+  }
+
+  .section-container:nth-child(even) {
+    background-color: #ed4337;
+    color: white;
+  }
+
+  .section-container:nth-child(odd) {
+    background-color: white;
+    color: black;
+  }
+
+  .section-container {
+    .section-title {
+      padding: 0 0 16px;
+      font-weight: bold;
+      font-size: 32px;
+      font-family: "Montserrat", sans-serif !important;
+    }
+
+    padding: 32px 0;
+
+    .section-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        max-width: 40%;
+        margin-bottom: 8px;
+      }
+
+      .analysis-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}

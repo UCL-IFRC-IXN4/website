@@ -1,0 +1,51 @@
+.research-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .section-container:nth-child(even) {
+    background-color: #ed4337;
+    color: white;
+    .References {
+      a {
+        color: white;
+      }
+    }
+  }
+
+  .section-container:nth-child(odd) {
+    background-color: white;
+    color: black;
+    .References {
+      a {
+        color: black;
+      }
+    }
+  }
+
+  .section-container {
+    width: 100%;
+    padding: 32px 0;
+
+    .section-title {
+      padding: 0 0 16px;
+      font-weight: bold;
+      font-size: 32px;
+      font-family: "Montserrat", sans-serif !important;
+    }
+
+    .section-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      p,
+      .References {
+        max-width: 40%;
+        word-wrap: break-word;
+        text-wrap: balance;
+      }
+    }
+  }
+}

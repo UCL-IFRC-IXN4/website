@@ -1,0 +1,67 @@
+.ImageCarousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 16px;
+
+  .carousel-image {
+    img {
+      border-radius: 15px;
+    }
+
+    .index-indicator-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 5px;
+
+      > * {
+        border-radius: 50%;
+        height: 10px;
+        width: 10px;
+        cursor: pointer;
+      }
+
+      .index-indicator {
+        opacity: 50%;
+      }
+
+      .index-indicator-active {
+        opacity: 100%;
+      }
+    }
+  }
+
+  .carousel-buttons:hover {
+    opacity: 100%;
+    scale: 1.4;
+  }
+
+  .carousel-buttons {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 30%;
+    transition: all 0.5s;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 50%;
+      border-radius: 5px;
+      padding: 0px;
+
+      svg {
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+  }
+}

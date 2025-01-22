@@ -1,0 +1,108 @@
+.evaluation-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    width: 100%;
+  }
+
+  .section-container:nth-child(even) {
+    background-color: #ed4337;
+    color: white;
+
+    th {
+      color: white;
+    }
+    th,
+    td {
+      border: 1px solid white;
+    }
+  }
+
+  .section-container:nth-child(odd) {
+    background-color: white;
+    color: black;
+
+    th {
+      background-color: #ed4337;
+      color: white;
+    }
+
+    th,
+    td {
+      border: 1px solid rgb(160 160 160);
+    }
+  }
+
+  table {
+    border-radius: 5px;
+    border-spacing: 0px;
+    table-layout: auto;
+  }
+
+  th,
+  td {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+  }
+
+  td {
+    font-size: small;
+  }
+
+  caption {
+    caption-side: bottom;
+    font-size: xx-small;
+  }
+
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 32px 0px;
+
+    p {
+      max-width: 40%;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    ol {
+      text-align: left;
+    }
+
+    h2 {
+      margin-bottom: 8px;
+    }
+    p {
+      margin: 0;
+    }
+  }
+
+  .section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 16px;
+    font-weight: bold;
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif !important;
+
+    svg {
+      font-size: 42px;
+    }
+  }
+}

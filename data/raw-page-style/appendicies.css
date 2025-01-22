@@ -1,0 +1,80 @@
+.appendicies-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    width: 100%;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .section-container:nth-child(even) {
+    background-color: #ed4337;
+    color: white;
+  }
+
+  .section-container:nth-child(odd) {
+    background-color: white;
+    color: black;
+  }
+
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 32px 0px;
+
+    .section-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 16px;
+      gap: 20px;
+      font-weight: bold;
+      font-size: 32px;
+      font-family: "Montserrat", sans-serif !important;
+
+      a {
+        svg {
+          color: #ed4337;
+          font-size: 8rem;
+        }
+      }
+    }
+
+    .section-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      p {
+        max-width: 40%;
+      }
+
+      .step-container {
+        max-width: 40%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-weight: 600;
+          font-size: 16px;
+          font-family: "Montserrat", sans-serif !important;
+        }
+
+        p {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ed4337;
+  padding: 3% 20px 5%;
+  width: 100%;
+
+  .home-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5%;
+
+    a {
+      font-size: 40px;
+      font-weight: 400;
+      color: white;
+      font-family: "Ubuntu", sans-serif;
+    }
+  }
+}
