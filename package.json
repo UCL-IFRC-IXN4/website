@@ -2,11 +2,11 @@
   "name": "website",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://ucl-ifrc-ixn4.github.io",
+  "homepage": "https://ucl-ifrc-ixn4.github.io/website",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages-clean gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
