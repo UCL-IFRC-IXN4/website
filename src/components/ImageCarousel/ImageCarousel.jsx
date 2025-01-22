@@ -5,9 +5,9 @@ import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 const images = [
-  "website/images/targets/persona_1.png",
-  "website/images/targets/persona_2.png",
-  "website/images/targets/persona_3.png",
+  "/website/images/targets/persona_1.png",
+  "/website/images/targets/persona_2.png",
+  "/website/images/targets/persona_3.png",
 ];
 
 const ImageCarousel = ({ milliseconds, buttonColor }) => {

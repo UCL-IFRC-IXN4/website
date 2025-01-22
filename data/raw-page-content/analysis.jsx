@@ -21,7 +21,7 @@ export const analysis_content = (
           removes the outliers by looping through the original dataset and
           returning the data that lies within the confidence intervals.
         </p>
-        <img src="website/images/graphs/bootstraping.png" />
+        <img src="/website/images/graphs/bootstraping.png" />
       </div>
     </div>
     <div className="section-container">
