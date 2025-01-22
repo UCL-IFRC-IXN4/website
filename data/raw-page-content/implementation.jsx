@@ -14,9 +14,9 @@ export const implementation_content = (
       </div>
       <div className="section-content">
         <div className="tech-stack-icons-container">
-          <img src="images/logos/python.png" />
-          <img src="images/logos/selenium.png" />
-          <img src="images/logos/pandas.png" />
+          <img src="/website/images/logos/python.png" />
+          <img src="/website/images/logos/selenium.png" />
+          <img src="/website/images/logos/pandas.png" />
         </div>
       </div>
     </div>
