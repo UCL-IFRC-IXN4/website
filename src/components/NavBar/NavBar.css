@@ -1,0 +1,19 @@
+.NavBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-right: 5%;
+
+  a {
+    text-transform: capitalize;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  a:hover {
+    color: black;
+    transition: color 0.2s ease;
+  }
+}

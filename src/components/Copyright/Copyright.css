@@ -1,0 +1,16 @@
+.Copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  .copyright-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-size: 12px;
+    }
+  }
+}

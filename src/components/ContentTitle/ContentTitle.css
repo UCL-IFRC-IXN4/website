@@ -1,0 +1,60 @@
+.ContentTitle {
+  background-color: #ed4337;
+  text-transform: capitalize;
+  padding-bottom: 64px;
+
+  font-family: "Montserrat", sans-serif;
+
+  width: 100vw;
+
+  color: white;
+
+  > span {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Montserrat", sans-serif !important;
+  }
+
+  * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-page-container {
+    text-transform: none;
+    flex-direction: row;
+    gap: 20px;
+
+    .home-page-text-container {
+      height: 100%;
+      flex-direction: column;
+      align-items: flex-start !important;
+      text-align: --webkit-auto;
+      max-width: 50%;
+
+      font-weight: bold;
+
+      > span {
+        font-size: 4rem;
+        font-weight: 700;
+        text-align: left;
+        font-family: "Montserrat", sans-serif !important;
+      }
+
+      .download-button {
+        flex-direction: row;
+        text-align: center;
+        gap: 10px;
+        font-size: 1.25rem;
+        width: fit-content;
+        background-color: black;
+        color: white;
+      }
+    }
+    .mat-icon-container {
+      text-align: center;
+    }
+  }
+}

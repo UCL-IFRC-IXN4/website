@@ -1,0 +1,31 @@
+.FooterNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .footer-nav-links {
+    width: fit-content;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 32px;
+
+    a {
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      svg {
+        height: 15px;
+        width: 15px;
+      }
+    }
+    *:hover{
+        color: black;
+    }
+  }
+}

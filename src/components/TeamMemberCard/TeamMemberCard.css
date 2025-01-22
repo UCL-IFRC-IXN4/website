@@ -1,0 +1,55 @@
+.TeamMemberCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border-radius: 5px;
+
+  width: 245px;
+  height: 400px;
+
+  img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+  }
+
+  border: 1px solid black;
+  * {
+    color: black !important;
+  }
+
+  .name-container span {
+    font-weight: bold;
+  }
+
+  .social-link {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    transition: all 0.5s;
+  }
+
+  .social-link:hover {
+    background-color: #ed4337;
+    transition: all 0.5s;
+    transform: scale(1.1);
+    * {
+      color: white !important;
+    }
+  }
+}

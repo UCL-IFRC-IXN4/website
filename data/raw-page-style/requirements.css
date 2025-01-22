@@ -1,0 +1,68 @@
+.requirement-page {
+  .section-container:nth-child(even) {
+    background-color: #ed4337;
+    color: white;
+  }
+
+  .section-container:nth-child(odd) {
+    background-color: white;
+    color: black;
+  }
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 32px 0;
+
+    .section-title {
+      span {
+        padding-bottom: 16px;
+        font-weight: bold;
+        font-size: 32px;
+        font-family: "Montserrat", sans-serif;
+      }
+    }
+
+    .section-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: inherit;
+      p {
+        max-width: 40%;
+      }
+
+      ul {
+        list-style: none;
+
+        .list-item-container {
+          span {
+            padding-bottom: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: "Montserrat", sans-serif;
+          }
+          p {
+            max-width: 100%;
+          }
+        }
+      }
+      .Slide {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .slide-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 400px;
+        min-width: 600px;
+        background-size: cover;
+      }
+    }
+  }
+}
